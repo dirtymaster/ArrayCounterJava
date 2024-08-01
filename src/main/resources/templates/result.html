@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Результат подсчета</title>
+</head>
+<body>
+<h1>Результат подсчета элементов</h1>
+<ul>
+    <li th:each="entry : ${result}">
+        <span th:text="${entry.key}"></span>: <span th:text="${entry.value}"></span>
+    </li>
+</ul>
+<a href="/">Назад</a>
+</body>
+</html>
